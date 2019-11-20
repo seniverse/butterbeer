@@ -1,0 +1,11 @@
+{application, butterbeer,
+ [
+  {description, "in-memory cache with configurable cache replacement policy"},
+  {vsn, "git"},
+  {registered, []},
+  {applications, []},
+  {env, []},
+  {licenses, ["Apache"]},
+  {links,[{"GitHub","https://github.com/seniverse/butterbeer"}]}
+ ]
+}.
