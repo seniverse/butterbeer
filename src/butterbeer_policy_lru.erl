@@ -38,7 +38,7 @@ reserve(Key) ->
       count := Count,
       queue := Queue} = State = get(?MODULE),
     case ets:lookup(Table, Key) of
-        [Data] ->
+        [{Key, Data}] ->
             {already_loaded, Data};
         [] ->
             case heapq:size(Queue) of
